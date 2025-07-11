@@ -200,4 +200,4 @@ def handle_message(event):
     reply_text(reply_token, msg)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8886)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
